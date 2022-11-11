@@ -8,6 +8,8 @@ It contains some ideas about agile development processes and some some kind of d
 
 ## Coming up...
 
+### Auth
+
 ### Tools
 - git
 - 
