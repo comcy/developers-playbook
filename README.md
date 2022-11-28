@@ -13,6 +13,10 @@ It contains some ideas about agile development processes and some some kind of d
 * Angular
   * Snippets
   * Boilerplate
+  * Review: Unsubscribe / *ngIf on async pipes
+  * rxjs handling
+  * BehaviorSubject
+  * ...
 
 * Auth
   * Basic auth
