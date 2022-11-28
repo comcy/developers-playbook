@@ -6,18 +6,23 @@ My private playbook on software development.
 This book represents my own thoughts on software development as a software developer.
 It contains some ideas about agile development processes and some some kind of development best practices as well.
 
-## Coming up...
+---
 
-### Auth
+# Ideas
+* GIT
+* Angular
+  * Snippets
+  * Boilerplate
 
-### Tools
-- git
-- 
+* Auth
+  * Basic auth
+  
+* Node prject setup
+  * rollup
+  * gulp
+ 
+# TBD
 
-### Agile artifacts
-- DOD
-- WAs
-
-### Programming languages and frameworks
-- Angular
-- Typescript
+* downcrawl toolset?
+* WIki as Code
+* Separation Code vs. Wiki
