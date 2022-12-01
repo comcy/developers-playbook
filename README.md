@@ -30,3 +30,5 @@ It contains some ideas about agile development processes and some some kind of d
 * downcrawl toolset?
 * WIki as Code
 * Separation Code vs. Wiki
+
+* Gist includes oder hier repo?
