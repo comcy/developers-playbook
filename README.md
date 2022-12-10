@@ -36,3 +36,15 @@ It contains some ideas about agile development processes and some some kind of d
 * Separation Code vs. Wiki
 
 * Gist includes oder hier repo?
+
+
+sql
+
+-- # Drop Table
+DROP DATABASE [ManagementApi]
+
+-- # Close connection
+SP_WHO 
+KILL 57
+
+
