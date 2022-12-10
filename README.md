@@ -20,6 +20,8 @@ It contains some ideas about agile development processes and some some kind of d
   * BehaviorSubject
   * ...
 
+  * regex und mehr ?
+
 * Auth
   * Basic auth
   
