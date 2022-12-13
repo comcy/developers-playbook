@@ -28,6 +28,10 @@ It contains some ideas about agile development processes and some some kind of d
 * Node prject setup
   * rollup
   * gulp
+  
+* iPad
+  * coding or sync with ipad
+
  
 # TBD
 
