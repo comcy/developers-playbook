@@ -15,7 +15,8 @@ It contains some ideas about agile development processes and some some kind of d
   * Boilerplate
   * Angular Review:  
       * Unsubscribe from subscriptions 
-      * `*ngIf` on async pipes
+      * `*ngIf` on async 
+      * const für Objekte etc ...
   * rxjs handling
   * BehaviorSubject
   * ...
