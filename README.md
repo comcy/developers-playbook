@@ -33,6 +33,8 @@ It contains some ideas about agile development processes and some some kind of d
 * iPad
   * coding or sync with ipad
 
+* ideas
+- slides with ts / python
  
 # TBD
 
