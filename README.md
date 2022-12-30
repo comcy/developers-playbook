@@ -35,6 +35,7 @@ It contains some ideas about agile development processes and some some kind of d
 
 * ideas
 - slides with ts / python
+- ...
  
 # TBD
 
