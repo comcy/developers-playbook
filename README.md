@@ -17,6 +17,8 @@ It contains some ideas about agile development processes and some some kind of d
       * Unsubscribe from subscriptions 
       * `*ngIf` on async 
       * const für Objekte etc ...
+      * pure function
+      * 
   * rxjs handling
   * BehaviorSubject
   * ...
@@ -37,6 +39,9 @@ It contains some ideas about agile development processes and some some kind of d
 - slides with ts / python
 - ...
  
+miro
+
+
 # TBD
 
 * downcrawl toolset?
