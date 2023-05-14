@@ -1,0 +1,133 @@
+\documentclass[12pt, a4paper, twoside]{scrartcl}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Packages
+% System - Sprache
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{ucs}
+\PrerenderUnicode{äüößÄÜÖ} 
+
+\usepackage[colorlinks=true, pdfborder={0 0 0}, pdftex, breaklinks=true, linkcolor=blue, citecolor=orange , filecolor=purple , urlcolor=purple, linktocpage=true]{hyperref}
+
+% Seiten Layout
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{pdfpages}
+\usepackage{minitoc}
+
+% TIKZ
+\usepackage{tikz}
+%\usepackage{00_Packages/tikzuml-v1.0b/tikz-uml}
+%\usepackage{00_Packages/tikz-er2}
+%\usepackage{00_Packages/pgf-pie-0.2.1/pgf-pie}
+% \usepackage{uml}
+\usepackage{pgf}
+
+% Inhalt
+\usepackage{wrapfig} %floatfig
+\usepackage{sidecap} %floatfig
+\usepackage{float}
+\usepackage{dpfloat}
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{prettyref}
+\usepackage{titleref}
+\usepackage{listings}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[colorinlistoftodos]{todonotes}
+
+% Mathe
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{mathtools}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Farbdefinitionen
+\definecolor{lightgrey}{gray}{.8}
+\definecolor{lila}{rgb}{0.,0,0.5}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Seiten-Einstellungen
+% Seitengrößen
+\geometry{left=25mm, right=30mm, top=40mm, bottom=35mm}
+% Zeilenabstand: 1,5
+\renewcommand{\baselinestretch}{1.5}
+% Einrückung bei Absatzbeginn
+\parindent0ex
+% Absatzgröße
+\parskip3ex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Befehl ReWrites
+% Zitate
+\newcommand{\dz}[2]{"#1 {\renewcommand{\baselinestretch}{1}\footnote{#2}}"} % für direkte Zitate - \dz{Zitat}{Quelle}
+\newcommand{\iz}[2]{#1 {\renewcommand{\baselinestretch}{1}\footnote{#2}}} % für indirekte Zitate - \iz{Zitat}{Quelle}
+% Namensänderungen
+\addto\captionsngerman{
+\renewcommand{\lstlistingname}{Quellcode} % benennt "Listing" um
+\renewcommand{\lstlistlistingname}{Quellcodeverzeichnis}
+\renewcommand{\bibname}{Quellenverzeichnis} % benennt "Literatur" um
+\renewcommand{\refname}{Quellenverzeichnis}}
+
+\floatname{algorithm}{Algorithmus}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Einstellungen: minitoc
+\mtcselectlanguage{german}
+\mtcsettitle{secttoc}{Inhalt}
+\mtcsetpagenumbers{secttoc}{off}
+\mtcsetrules{secttoc}{off}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Referenzendefinitionen
+% - full
+%Teile
+\newrefformat{partmin}{\textcolor{blue}{Teil} \titleref{#1}}
+% Abschnitte
+\newrefformat{sec}{\textcolor{blue}{Kapitel} \titleref{#1} auf Seite \pageref{#1}}
+\newrefformat{subsec}{\textcolor{blue}{Unterkapitel} \titleref{#1} auf Seite \pageref{#1}}
+\newrefformat{secmin}{\textcolor{blue}{Kapitel} \titleref{#1}}
+\newrefformat{subsecmin}{\textcolor{blue}{Unterkapitel} \titleref{#1}}
+\newrefformat{anhang}{\textcolor{blue}{Anhang} ~\ref{#1} auf Seite \titleref{#1}}
+\newrefformat{anhangmin}{\textcolor{blue}{Anhang} ~\ref{#1}}
+% Abbildungen
+\newrefformat{fig}{\textcolor{blue}{Abbildung}~\ref{#1} auf Seite \pageref{#1}}
+\newrefformat{figmin}{\textcolor{blue}{Abbildung}~\ref{#1}}
+% Tabellen
+\newrefformat{tab}{\textcolor{blue}{Tabelle}~\ref{#1} auf Seite \pageref{#1}} 
+\newrefformat{tabmin}{\textcolor{blue}{Tabelle}~\ref{#1}} 
+% Quellcodeausschnitt
+\newrefformat{lst}{\textcolor{blue}{Quellcodeausschnitt}~\ref{#1} auf Seite \pageref{#1}} 
+\newrefformat{lstmin}{\textcolor{blue}{Quellcodeausschnitt}~\ref{#1}}
+% Algorithmen
+\newrefformat{alg}{\textcolor{blue}{Algorithmus}~\ref{#1} auf Seite \pageref{#1}} 
+\newrefformat{algmin}{\textcolor{blue}{Algorithmus}~\ref{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Style Element: Blauer Balken 4-teilig
+%\newcommand{\hsdesignbarfour}[1][0.99]{%
+	%\begin{tikzpicture}[scale=#1]
+	%\draw [hsblue2, fill=hsblue2] (0,0) -- (0.1667 \textwidth ,0.0136 \textwidth ) -- (0.1667 \textwidth ,0.042 %\textwidth) -- (0,0.042 \textwidth );
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Einstellungen: minitoc
+\mtcselectlanguage{german}
+\mtcsettitle{secttoc}{Inhalt}
+\mtcsetpagenumbers{secttoc}{off}
+\mtcsetrules{secttoc}{off}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
