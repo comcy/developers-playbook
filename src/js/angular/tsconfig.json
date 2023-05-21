@@ -3,6 +3,17 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "basics-feature": [
+        "dist/basics-feature"
+      ],
+      "lib-state-management-feature": [
+        "dist/lib-state-management-feature"
+      ],
+      "statemanagement-feature": [
+        "dist/statemanagement-feature"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,

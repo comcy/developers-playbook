@@ -99,6 +99,105 @@
           }
         }
       }
+    },
+    "basics-feature": {
+      "projectType": "library",
+      "root": "projects/basics-feature",
+      "sourceRoot": "projects/basics-feature/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/basics-feature/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/basics-feature/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/basics-feature/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/basics-feature/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "lib-state-management-feature": {
+      "projectType": "library",
+      "root": "projects/lib-state-management-feature",
+      "sourceRoot": "projects/lib-state-management-feature/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/lib-state-management-feature/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/lib-state-management-feature/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/lib-state-management-feature/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/lib-state-management-feature/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "statemanagement-feature": {
+      "projectType": "library",
+      "root": "projects/statemanagement-feature",
+      "sourceRoot": "projects/statemanagement-feature/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/statemanagement-feature/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/statemanagement-feature/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/statemanagement-feature/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/statemanagement-feature/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }
